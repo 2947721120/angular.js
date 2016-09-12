@@ -1,0 +1,11 @@
+<h1>哎呀!</h1>
+
+<p>您所请求的页面不存在.也许你在寻找别的东西...</p>
+
+<div ng-controller="Error404SearchCtrl">
+
+  <dl ng-repeat="(key, value) in results" ng-show="value.length" style="float: left; margin-right:20px">
+    <dt>{{ key }}</dt>
+    <dd ng-repeat="item in value"><a ng-href="{{ item.path }}">{{ item.name }}</a></dd>
+  </dl>
+</div>

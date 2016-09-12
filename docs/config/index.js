@@ -138,7 +138,7 @@ module.exports = new Package('angularjs', [
 
 .config(function(checkAnchorLinksProcessor) {
   checkAnchorLinksProcessor.base = '/';
-  // We are only interested in docs that have an area (i.e. they are pages)
+  // 我们只是有一个医生感兴趣区域（即页）
   checkAnchorLinksProcessor.checkDoc = function(doc) { return doc.area; };
 })
 
